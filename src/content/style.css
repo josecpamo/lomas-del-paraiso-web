@@ -1,0 +1,49 @@
+:root {
+    --bg-primary: #0D0F1A;
+    --bg-secondary: #151720;
+    --white-col: #FFF;
+    --accent-col: #5EA884;
+    --alternate-col: #337656;
+    --gray-col: #262727;
+    --lightgray-col: #505352;
+}
+
+html {
+    background-color: var(--bg-primary);
+}
+
+.bg-nav {
+    background-color: var(--white-col);
+    opacity: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    left: 25px;
+    right: 25px;
+    z-index: 100;
+}
+
+.bg-container {
+    background-color: var(--bg-secondary);
+    width: 80%;
+    margin: 10px auto 10px auto;
+    padding: 12px;
+}
+
+.bg-alternate {
+    background-color: var(--alternate-col);
+}
+
+.header-title {
+    z-index: 20;
+    top: 25%;
+    left: 25px;
+    font-weight: bold;
+}
+
+.lightgray-txt {
+    color: var(--lightgray-col);
+}
+
+.white-txt {
+    color: var(--white-col);
+}
