@@ -1,6 +1,8 @@
 :root {
     --bg-primary: #0D0F1A;
     --bg-secondary: #151720;
+    --bg-terciary: #D7E0E9;
+    --bg-alternate: #272931;
     --white-col: #FFF;
     --accent-col: #5EA884;
     --alternate-col: #337656;
@@ -13,7 +15,7 @@ html {
 }
 
 .bg-nav {
-    background-color: var(--white-col);
+    background-color: var(--bg-terciary);
     opacity: 100%;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -31,6 +33,15 @@ html {
 
 .bg-alternate {
     background-color: var(--alternate-col);
+}
+
+.bg-form {
+    background-color: var(--bg-alternate);
+}
+
+.bg-form::placeholder {
+    color: var(--white-col) ;
+    opacity: 1;
 }
 
 .header-title {
