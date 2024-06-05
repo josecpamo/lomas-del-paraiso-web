@@ -1,64 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import ContactUs from '../components/ContactUs.astro';
+import Discover from '../components/Discover.astro';
+import Gallery from '../components/Gallery.astro';
 ---
 
 <Layout title="Lomas del Paraíso">
 	<main>
-		<Header></Header>
-		<section id="Discover" class="bg-container mt-2.5">
-			<div class="mr-auto ml-auto w-fit">
-				<h2 class="white-txt font-bold">DESCUBRE LOMAS DEL PARAÍSO</h2>
-			</div>
+		<Discover></Discover>
 
-			<div class="white-txt flex flex-row justify-evenly m-24">
-				<div class="text-center">
-					<img src="/Figma Design/terreno.webp" alt="Our location image">
-					<h3 class="font-bold mt-3">NUESTRA UBICACIÓN</h3>
-					<span>Piedades Sur, San Ramon, Alajuela.</span>
-				</div>
-				<div class="text-center">
-					<img src="/Figma Design/terreno3.webp" alt="Our projects image">
-					<div class="mt-6">
-						<a href="" class="bg-alternate rounded-3xl p-2">
-							<span class="font-bold mr-5 ml-5">NUESTROS PROYECTOS</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
+		<Gallery></Gallery>
 
-		<section id="Photos" class="bg-container">
-			<div class="mr-auto ml-auto w-fit">
-				<h2 class="white-txt font-bold">ALGUNAS FOTOS DE NUESTROS PROYECTOS</h2>
-			</div>
-		</section>
-
-		<section id="Contact" class="bg-container">
-			<div class="mr-auto ml-auto w-fit">
-				<h2 class="white-txt font-bold">CONTÁCTANOS</h2>
-			</div>
-
-			<form class="mr-auto ml-auto w-6/12 m-24" action="/my-handling-form-page" method="post">
-				<ul class="">
-				  <li class="m-5">
-					<input class="h-8 w-full bg-form white-txt p-2"type="text" id="name" name="user_name" placeholder="Nombre" required />
-				  </li>
-				  <li class="m-5">
-					<input class="h-8 w-full bg-form white-txt p-2" type="email" id="mail" name="user_email" placeholder="Correo" required />
-				  </li>
-				  <li class="m-5">
-					<input class="h-8 w-full bg-form white-txt p-2" type="tel" id="phone" name="user_phone" placeholder="Número de teléfono" required />
-				  </li>
-				  <li class="m-5">
-					<textarea style="resize: none;" class="h-72 w-full bg-form white-txt p-2" id="msg" name="user_message" placeholder="Mensaje"></textarea>
-				  </li>
-				</ul>
-			  </form>
-		</section>
-		<Footer></Footer>
-
+        <ContactUs></ContactUs>
 	</main>
 </Layout>
