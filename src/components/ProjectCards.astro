@@ -15,7 +15,7 @@ let projects = [
         priceRangeStart: 15000000,
         priceRangeEnd: 18000000,
         description: "Lorem ipsum...2",
-        imageUrl: "/Figma Design/terreno4.webp",
+        imageUrl: "/Figma Design/terreno3.webp",
         alt: "Proyecto Alzahar"
     }
 ]
@@ -25,7 +25,7 @@ let projects = [
     <div class="mr-auto ml-auto w-fit">
         <h2 class="white-txt font-bold">PROYECTOS A NUESTRA DISPOSICIÓN</h2>
     </div>
-    <div class="grid griw-rows-3 grid-flow-col justify-center gap-6">
+    <div class="grid griw-rows-3 grid-flow-col justify-center gap-6 m-24">
     {
         projects.map((project) => 
             <ProjectCard imageUrl={project.imageUrl} title={project.name} alt={project.alt} description={project.description}/>

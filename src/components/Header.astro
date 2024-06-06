@@ -1,5 +1,6 @@
 ---
 import Nav from "./Nav.astro"
+import ImageCarousel from "./HeaderCarousel.tsx"
 ---
 
 <header class="select-none">
@@ -8,5 +9,6 @@ import Nav from "./Nav.astro"
 		<h1 class="text-5xl">Lomas del Paraíso</h1>
 		<h2 class="text-xl w-10/12">Te ayudamos a hacer realidad el sueño de tener tu propio terreno del tamaño que lo desees, con los mejores paisajes y precios</h2>
 	</div>
-	<img class="w-full" src="/Figma Design/terreno_background.webp" alt="Background image">
+	
+	<ImageCarousel client:visible/>
 </header>

@@ -12,6 +12,7 @@
 
 html {
     background-color: var(--bg-primary);
+    scroll-behavior: smooth;
 }
 
 .bg-nav {

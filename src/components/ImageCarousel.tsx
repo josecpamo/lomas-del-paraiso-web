@@ -9,7 +9,14 @@ const images = [
 
 export default function ImageCarousel() {
   return (
-      <Carousel autoPlay interval={3000} infiniteLoop centerMode>
+      <Carousel 
+      autoPlay
+      interval={5000} 
+      infiniteLoop
+      thumbWidth={64}
+      width={1200}
+      centerMode
+      >
         {images.map((URL, index) => (
           <div className="slide">
             <img alt="sample_file" src={URL} key={index} />
