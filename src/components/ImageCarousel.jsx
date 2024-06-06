@@ -9,7 +9,6 @@ const images = [
 
 export default function ImageCarousel() {
   return (
-    <div className="box">
       <Carousel autoPlay interval={3000} infiniteLoop centerMode>
         {images.map((URL, index) => (
           <div className="slide">
@@ -17,6 +16,5 @@ export default function ImageCarousel() {
           </div>
         ))}
       </Carousel>
-    </div>
   );
 }

@@ -1,0 +1,36 @@
+---
+import ProjectCard from './ProjectCard.astro';
+
+let projects = [
+    {
+        name: "Quebradillas",
+        priceRangeStart: 12000000,
+        priceRangeEnd: 20000000,
+        description: "Lorem ipsum...",
+        imageUrl: "/Figma Design/terreno.webp",
+        alt: "Proyecto Quebradillas"
+    },
+    {
+        name: "Alzahar",
+        priceRangeStart: 15000000,
+        priceRangeEnd: 18000000,
+        description: "Lorem ipsum...2",
+        imageUrl: "/Figma Design/terreno4.webp",
+        alt: "Proyecto Alzahar"
+    }
+]
+---
+
+<section class="bg-container">
+    <div class="mr-auto ml-auto w-fit">
+        <h2 class="white-txt font-bold">PROYECTOS A NUESTRA DISPOSICIÓN</h2>
+    </div>
+    <div class="grid griw-rows-3 grid-flow-col justify-center gap-6">
+    {
+        projects.map((project) => 
+            <ProjectCard imageUrl={project.imageUrl} title={project.name} alt={project.alt} description={project.description}/>
+        )
+    }
+
+    </div>
+</section>
