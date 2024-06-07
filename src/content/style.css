@@ -59,3 +59,12 @@ html {
 .white-txt {
     color: var(--white-col);
 }
+
+.photos-carousel {
+    max-height: 560px;
+}
+
+.project-carousel {
+    height: 400px;
+    width: 128px;
+}

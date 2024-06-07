@@ -1,0 +1,22 @@
+---
+import ProjectCarousel from './ProjectCarousel.tsx';
+---
+
+<section class="bg-container">
+    <div class="m-24 flex flex-row justify-evenly">
+        <ProjectCarousel client:visible/>
+
+        <div class="white-txt w-96 flex flex-col justify-start items-left">
+            <div class="h-64">
+                <h3 class="font-bold text-2xl">Proyecto Quebradillas</h3>
+    
+                <p class="mt-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quasi quos velit obcaecati, vero temporibus magnam commodi architecto aut eius, amet repudiandae! Vero expedita sapiente ex quae itaque, maxime ullam.</p>
+    
+                <p class="mt-6">Rango de Precios: 12,000,000 - 18,000,000</p>
+
+            </div>
+
+            <button class="mt-16 white-txt bg-alternate hover:bg-teal-800 focus:ring-2 focus:outline-none focus:ring-teal-300 font-bold rounded-lg text-sm w-32 sm:w-fit px-5 py-2.5 text-center dark:bg-teal-400 dark:hover:bg-teal-700 dark:focus:ring-teal-800">Cotizar terreno</button>    
+        </div>
+    </div>
+</section>

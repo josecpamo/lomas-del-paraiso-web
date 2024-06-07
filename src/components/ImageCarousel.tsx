@@ -18,7 +18,7 @@ export default function ImageCarousel() {
       centerMode
       >
         {images.map((URL, index) => (
-          <div className="slide">
+          <div className="slide photos-carousel">
             <img alt="sample_file" src={URL} key={index} />
           </div>
         ))}

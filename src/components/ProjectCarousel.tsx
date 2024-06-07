@@ -10,20 +10,11 @@ const images = [
 export default function ImageCarousel() {
   return (
       <Carousel 
-      autoPlay
-      interval={5000} 
-      infiniteLoop 
-      showArrows={false} 
-      showStatus={false} 
-      showIndicators={false}
-      showThumbs={false}
-      swipeable={false}
-      animationHandler='fade'
-      transitionTime={2000}
-      stopOnHover={false}
+      infiniteLoop
+      thumbWidth={64}
       >
         {images.map((URL, index) => (
-          <div className="slide max-h-screen">
+          <div className="slide project-carousel">
             <img alt="sample_file" src={URL} key={index} />
           </div>
         ))}
